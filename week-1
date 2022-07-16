@@ -1,0 +1,40 @@
+The software development life cycle describes the steps that make up the software development process.
+A common cycle adopted by organisations include the following steps;
+
+1. Planning
+2. Definition of requirements
+3. Design and prototyping
+4. Software development
+5. Testing
+6. Deployment
+7. Operations and maintenance
+
+A few models of the SDLC include;
+
+1. Agile
+2. Waterfall
+3. Iterative
+
+A robust DevOps system presents one with the opportunity to deliver what the market demands through a standardised, automated and well-governed system. DevOps focuses on using practices that emphasise on collaboration and communication that enable building, testing and releasing applications rapidly, frequently, and reliably.
+The different phases of the DevOps model include;
+
+1. Continuous development
+2. Continuous integration
+3. Continuous testing
+4. Continuous deployment
+5. Continuous monitoring
+6. Continuous feedback
+
+Best Practices for implementing DevOps include;
+
+1. Agile project management
+2. Shift left with CI/CD
+3. Build with the right tools
+4. Implement Automation
+5. Monitor the DevOps pipeline and applications
+6. Observability
+7. Gather continuous feedback
+8. Change the culture
+
+DevOps is a set of practices that aim to shorten the software development lifecycle and increase delivery speed of higher-quality software by combining and automating the work of software development teams and IT operations teams. 
+A Site Reliability Engineer on the other hand uses software engineering to automate IT operations tasks that would normally be performed by system administrators. These tasks include production system management, change management and incident response.
