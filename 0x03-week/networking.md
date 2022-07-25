@@ -1,8 +1,14 @@
-REFERENCE: https://medium.com/@ogunbodetimi/what-happens-when-you-type-https-www-google-com-in-your-browser-and-press-enter-e7418806de5c
+<p>REFERENCE: https://medium.com/@ogunbodetimi/what-happens-when-you-type-https-www-google-com-in-your-browser-and-press-enter-e7418806de5c<p>
 
-1. Simply put, the OSI (Open System Interconection) model is a set of 
-    rules/guidelines set in place for computers to communicate with one 
-    another regardless of their underlying structures.
+<ul>
+  <li>
+    1. 
+    <p>
+      Simply put, the OSI (Open System Interconection) model is a set of 
+      rules/guidelines set in place for computers to communicate with one 
+      another regardless of their underlying structures.
+    </p>
+  </li>
 
 2. There a seven different layers that the OSI model follows for every communication 
     that takes place.
