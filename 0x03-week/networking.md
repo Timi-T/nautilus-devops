@@ -160,7 +160,7 @@
           <li> Save the file and run nginx again</li>
         </ul>
         <p> You should have something like this after making changes to the configuration file </p>
-        <img src='server-conf1' width='350'>
+        <img src='server-conf1.png' width='350'>
       </li>
     </ul>
   </li>
