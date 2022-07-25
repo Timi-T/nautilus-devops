@@ -41,40 +41,44 @@
       is closest to the user and cummunication is initiated by the user.
     </p>
     <p></p>
-    <p>
-      7. Application layer - This layer is responsible for defining the protocols that the data is transmitted with. This could be HTTP, SMTP, DNS, FTP. These different protocols have thier different   applications. So basically, when a communication is requested by a client (lets assume visiting a website for this scenerio) the protocol for this usually would be HTTPS and it is defined at the application layer.
-    </p>
-    <p></p>
-    <p>
-      6. Presentation layer - There are three main functions for the presentation layer. Translation, encrytpion/decryption and compression of data. 
-        <p> - Translation is used to convert the incoming data to the required format on the client machine. </p>
-        <p> - Encryption is used to protect data being sent over the client Network and the reverse (decrytion) happens for incoming traffic. </p>
-        <p> - Compression is used to reduce the size of data being transmited to improve efficiency and speed of communication. </p>
-        <p></p>         
-        <p>
-          continuing with our scenerio, at this layer, data is translated (lets assume to UTF-8 format). Then the data to be sent is encrypted (lets assume with the use of an SSL certificate) and finally, the data is compressed using a data compression algorithm.
-        </p>
-    </p>
-    <p></p>
-    <p>
-      5. Session layer -  This layer controls the session for the requested connection. It primarily controls the opening and closing of ports on the client machine and closes it once the request has been fulfilled by the host. This layer is also responsible for synchronizing data with checkpoints to ensure continuity in an event of a break in transmission. In our scenerio, the port responsible for this would be 443 for HTTPS and 80 for HTTP protocols. So the session layer manages the opening and closing of these ports per request.
-    </p>
-    <p></p>
-    <p>
-      4. Transport layer - This layer is responsible for breaking the data being sent into chunks called segments before sending it further down the chain. It is also responsible for control flow. This is basically to ensure optimal connection speeds such that a sender with a very fast transmission speed doesnt overwhelm a reciever with slower connections.
-    </p>
-    <p></p>
-    <p>
-      3. Network layer - This layer is essential for communication hapenning over differnt networks. It also breaks down data from the Transport layer (segments) into even smaller pieces called packets. It does the reverse (reassemble) packets on the recievers end. It is also responsible for routing (which determines the best path from source to destination) and Logical addressing which places the ip addresses of both sender and reciever on the request header which helps distinguish both devices uniquely and universally.
-    </p>
-    <p></p>
-    <p>
-      2. Data-link layer - This layer ensures data transfer is error free from one node to another. It further breaks data into smaller units called frames.
-    </p>
-    <p></p>
-    <p>
-      1. Physical layer - Finally, the physical layer is responsible for breaking down data into bits of 1's and 0's. This is the lowest level of the chain and it performs operations such as bit synchronization and bit rate control.
-    </p>
+    <ul>
+      <li>
+        7. Application layer - This layer is responsible for defining the protocols that the data is transmitted with. This could be HTTP, SMTP, DNS, FTP. These different protocols have thier different   applications. So basically, when a communication is requested by a client (lets assume visiting a website for this scenerio) the protocol for this usually would be HTTPS and it is defined at the application layer.
+      </li>
+      <p></p>
+      <li>
+        6. Presentation layer - There are three main functions for the presentation layer. Translation, encrytpion/decryption and compression of data.
+          <ul> 
+            <li> - Translation is used to convert the incoming data to the required format on the client machine. </li>
+            <li> - Encryption is used to protect data being sent over the client Network and the reverse (decrytion) happens for incoming traffic. </li>
+            <li> - Compression is used to reduce the size of data being transmited to improve efficiency and speed of communication. </li>
+          </ul>
+          <p></p>         
+          <p>
+            continuing with our scenerio, at this layer, data is translated (lets assume to UTF-8 format). Then the data to be sent is encrypted (lets assume with the use of an SSL certificate) and finally, the data is compressed using a data compression algorithm.
+          </p>
+      </li>
+      <p></p>
+      <li>
+        5. Session layer -  This layer controls the session for the requested connection. It primarily controls the opening and closing of ports on the client machine and closes it once the request has been fulfilled by the host. This layer is also responsible for synchronizing data with checkpoints to ensure continuity in an event of a break in transmission. In our scenerio, the port responsible for this would be 443 for HTTPS and 80 for HTTP protocols. So the session layer manages the opening and closing of these ports per request.
+      </li>
+      <p></p>
+      <li>
+        4. Transport layer - This layer is responsible for breaking the data being sent into chunks called segments before sending it further down the chain. It is also responsible for control flow. This is basically to ensure optimal connection speeds such that a sender with a very fast transmission speed doesnt overwhelm a reciever with slower connections.
+      </li>
+      <p></p>
+      <li>
+        3. Network layer - This layer is essential for communication hapenning over differnt networks. It also breaks down data from the Transport layer (segments) into even smaller pieces called packets. It does the reverse (reassemble) packets on the recievers end. It is also responsible for routing (which determines the best path from source to destination) and Logical addressing which places the ip addresses of both sender and reciever on the request header which helps distinguish both devices uniquely and universally.
+      </li>
+      <p></p>
+      <li>
+        2. Data-link layer - This layer ensures data transfer is error free from one node to another. It further breaks data into smaller units called frames.
+      </li>
+      <p></p>
+      <li>
+        1. Physical layer - Finally, the physical layer is responsible for breaking down data into bits of 1's and 0's. This is the lowest level of the chain and it performs operations such as bit synchronization and bit rate control.
+      </li>
+    </ul>
   </li>
 
   <li>
