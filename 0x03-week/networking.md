@@ -160,11 +160,39 @@
           <li> Save the file and run nginx again</li>
         </ul>
         <p> You should have something like this after making changes to the configuration file </p>
-        <img src='server-conf1.png' width='350'>
+        <img src='server-conf1.png' width='450' height='350'>
       </li>
     </ul>
   </li>
   <li>
     <h1>8.</h1>
+    <p>
+      To serve an application through HTTPS, An SSL certificate must be installed and signed by a certificate authority to make it authentic. In this example, we are going to be creating an ssl certificate but it would be self signed. This is due to the fact that the server is being run on my local machine.
+    </p>
+    <ul>
+      <li>
+        Install openssl on local machine
+      </li>
+      <li>
+        Generate rsa key to be signed by running command "1. openssl genrsa -des3 -out hostname.key 4096"
+      </li>
+      <li>
+        Create a .csr file by runnng command "openssl req -new -key hostname.key -out hostname.csr"
+      </li>
+      <li>
+        To make ssl cert to run without having to use a password, runn command "cp hostname.key hostname.key.pw" and then "openssl rsa -in hostname.key.pw -out hostname.key".
+      </li>
+      <li>
+        Self sign the key with command "openssl x509 -req -in hostname.csr -signkey hostname.key -out hostname.crt"
+      </li>
+      <li>
+        Create a folder "ssl" in the /usr/local/etc/nginx directory. Then copy both hostname.key and hostname.crt to the folder.
+      </li>
+      <li>
+        Finally, configure "/usr/local/etc/nginx/nginx.conf" to use ssl certificates. Scroll to the end of the nginx.conf file where you have HTTPS server and uncomment the lines.
+      </li>
+    </ul>
+    <p>Your configuration file should look like this once you are done</p>
+    <img src='server-conf2.png' width='450' height='350'>
   </li>
 </ul>
