@@ -1,0 +1,12 @@
+---
+- name: Install Curl, Nginx and Apache
+  hosts: ansibleAws
+  become: True
+  become_user: root
+  tasks:
+    - name: "Install curl"
+      apt: name=curl update_cache=yes state=present
+    - name: "Install nginx"
+      apt: name=nginx update_cache=yes state=present
+    - name: "Install apache2"
+      apt: name=apache2 update_cache=yes state=present
