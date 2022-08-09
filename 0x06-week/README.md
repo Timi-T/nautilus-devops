@@ -23,15 +23,15 @@
       <li>
         Next, run command "terraform plan". This parses the terraform manifest and gives an output of all changes to be made to the state of your infrastructure before the changes are applied.
         <img src="terra-plan.png" />
-        (Full output of command -> GITHUB LINK)
+        (Full output of command -> https://github.com/Timi-T/nautilus-devops/blob/main/0x06-week/terra-plan.md)
       </li>
       <li>
         Finally, run command "terraform apply". This applies all the changes to the state of the infrastructure.
         <img src="terra-apply.png" />
       </li>
     </ul>
+    <p>Below, we see the running instance "one-instance" on AWS platform</p>
     <img src="running-instance.png" />
-    <p>Here we see the running instance "one-instance" on AWS platform</p>
-    Terraform manifest 1: (GITHUB LINK)
+    Terraform manifest 1: (https://github.com/Timi-T/nautilus-devops/blob/main/0x06-week/one-instance.tf)
   </li>
 </ul>
