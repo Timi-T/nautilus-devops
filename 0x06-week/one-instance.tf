@@ -12,17 +12,6 @@ resource "aws_instance" "one-instance" {
     }
 }
 
-variable "access_key" {
-  description = "Access key for aws account"
-  type        = string
-  sensitive = true
-}
-variable "secret_key" {
-  description = "Secret key for AWS account"
-  type        = string
-  sensitive = true
-}
-
 #resource "aws_vpc" "vpc1" {
 #    cidr_block = "10.0.0.0/16"
 #    tags = {
